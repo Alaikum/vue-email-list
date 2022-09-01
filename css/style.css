@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Maze', cursive;
+}
+
+html {
+    background-color: rgb(251, 167, 42);
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+.titolo{
+text-transform: uppercase;
+text-align: center;
+font-size: 3rem;
+margin: 1rem;
+}
+
+.titolo>span{
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.mail__list {
+    max-width: 1000px;
+    background-color: beige;
+    border: 3px dotted cyan;
+    color: red;
+    text-align: center;
+    font-size: 2rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
