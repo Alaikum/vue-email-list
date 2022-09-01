@@ -7,8 +7,13 @@ const app = new Vue({
         show:false,
 
     },
-    mounted() {
+    beforeMount(){
         this.fetchMail(),
+        console.log('beforeMount')
+        
+    },
+    mounted() {
+        
         this.visibile()
         },
     methods: {
@@ -20,16 +25,19 @@ const app = new Vue({
                     .then((response) => {
                         console.log(response.data.response)
                         this.randomMail.push(response.data.response)
+                 
+                        // if(i===9){this.show=!this.show}
                     })
             }
         },
         visibile(){
-            setTimeout( () =>{
-                this.show=!this.show
-            console.log(this.show)
-              },  2000)
+            // setTimeout( () =>{
+            //     this.show=!this.show
+            // console.log(this.show)
+            //   },  2000)
            
         }
 
     }
 })
+

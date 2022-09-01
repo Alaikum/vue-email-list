@@ -14,7 +14,7 @@
 </head>
 <body>
   <h1 class="titolo">lista mail, con colori <span>"perfettamente"</span>  abbinati</h1>
-    <div class="mail__list" id="app" v-show="show">
+    <div class="mail__list" id="app"   v-if="randomMail.length===10">
       
         <ul v-for="el in randomMail"><li>{{el}}</li></ul>
     </div>
